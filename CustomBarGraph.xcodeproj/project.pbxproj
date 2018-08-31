@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4937F47C1EC2E580008E3053 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4937F47B1EC2E580008E3053 /* HomeViewController.m */; };
+		493EF7631ECC25BD007B2ED1 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EF7621ECC25BD007B2ED1 /* PieChart.m */; };
+		493EF76A1ECC322E007B2ED1 /* BarChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EF7691ECC322E007B2ED1 /* BarChartController.m */; };
+		493EF76D1ECC328D007B2ED1 /* LineChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EF76C1ECC328D007B2ED1 /* LineChartController.m */; };
+		493EF7701ECC485F007B2ED1 /* PieChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EF76F1ECC485F007B2ED1 /* PieChartController.m */; };
+		493EF7761ECC48CB007B2ED1 /* PieChart3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EF7751ECC48CB007B2ED1 /* PieChart3DController.m */; };
+		493F14761EC5C51B001A7CA8 /* MyShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 493F14751EC5C51B001A7CA8 /* MyShapeLayer.m */; };
+		4963D3F01EC084FA00C1B625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963D3EF1EC084FA00C1B625 /* main.m */; };
+		4963D3F31EC084FA00C1B625 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963D3F21EC084FA00C1B625 /* AppDelegate.m */; };
+		4963D3F91EC084FA00C1B625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4963D3F71EC084FA00C1B625 /* Main.storyboard */; };
+		4963D3FB1EC084FA00C1B625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4963D3FA1EC084FA00C1B625 /* Assets.xcassets */; };
+		4963D3FE1EC084FA00C1B625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4963D3FC1EC084FA00C1B625 /* LaunchScreen.storyboard */; };
+		4963D4091EC0870B00C1B625 /* BarGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 4963D4081EC0870B00C1B625 /* BarGraph.m */; };
+		4968D80C1ECB1E780003743A /* LineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 4968D80B1ECB1E780003743A /* LineGraph.m */; };
+		49C3E6D31ED2C1EF008E3299 /* DonutChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6D21ED2C1EF008E3299 /* DonutChart.m */; };
+		49C3E6D61ED2C205008E3299 /* DonutChartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6D51ED2C205008E3299 /* DonutChartController.m */; };
+		49C3E6DF1ED310D2008E3299 /* FullMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6DE1ED310D2008E3299 /* FullMeter.m */; };
+		49C3E6E21ED310DE008E3299 /* HalfMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6E11ED310DE008E3299 /* HalfMeter.m */; };
+		49C3E6E51ED310EB008E3299 /* Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6E41ED310EB008E3299 /* Scale.m */; };
+		49C3E6E81ED31108008E3299 /* FullMeterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6E71ED31108008E3299 /* FullMeterController.m */; };
+		49C3E6F11ED313B2008E3299 /* HalfMeterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6F01ED313B2008E3299 /* HalfMeterController.m */; };
+		49C3E6F41ED313D6008E3299 /* VHScaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E6F31ED313D6008E3299 /* VHScaleController.m */; };
+		49D295A31ECDA6A8002F5694 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D295A01ECDA6A8002F5694 /* CustomCell.xib */; };
+		49D295A41ECDA6A8002F5694 /* CustomCellForPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D295A21ECDA6A8002F5694 /* CustomCellForPieChart.m */; };
+		49D971301ECEFA220079A809 /* Pie3DChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9712F1ECEFA220079A809 /* Pie3DChart.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4937F47A1EC2E580008E3053 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4937F47B1EC2E580008E3053 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4937F47D1EC2E5B3008E3053 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		4937F47E1EC2E5D9008E3053 /* definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = definitions.h; sourceTree = "<group>"; };
+		493EF7611ECC25BD007B2ED1 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
+		493EF7621ECC25BD007B2ED1 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
+		493EF7681ECC322E007B2ED1 /* BarChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarChartController.h; sourceTree = "<group>"; };
+		493EF7691ECC322E007B2ED1 /* BarChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarChartController.m; sourceTree = "<group>"; };
+		493EF76B1ECC328D007B2ED1 /* LineChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineChartController.h; sourceTree = "<group>"; };
+		493EF76C1ECC328D007B2ED1 /* LineChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineChartController.m; sourceTree = "<group>"; };
+		493EF76E1ECC485F007B2ED1 /* PieChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChartController.h; sourceTree = "<group>"; };
+		493EF76F1ECC485F007B2ED1 /* PieChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChartController.m; sourceTree = "<group>"; };
+		493EF7741ECC48CB007B2ED1 /* PieChart3DController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart3DController.h; sourceTree = "<group>"; };
+		493EF7751ECC48CB007B2ED1 /* PieChart3DController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart3DController.m; sourceTree = "<group>"; };
+		493EF7781ECC49E6007B2ED1 /* GraphCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphCommon.h; sourceTree = "<group>"; };
+		493EF7791ECC49FB007B2ED1 /* GraphDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphDefinition.h; sourceTree = "<group>"; };
+		493F14741EC5C51B001A7CA8 /* MyShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyShapeLayer.h; sourceTree = "<group>"; };
+		493F14751EC5C51B001A7CA8 /* MyShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyShapeLayer.m; sourceTree = "<group>"; };
+		4963D3EB1EC084FA00C1B625 /* CustomBarGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomBarGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4963D3EF1EC084FA00C1B625 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4963D3F11EC084FA00C1B625 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4963D3F21EC084FA00C1B625 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4963D3F81EC084FA00C1B625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4963D3FA1EC084FA00C1B625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4963D3FD1EC084FA00C1B625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4963D3FF1EC084FA00C1B625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4963D4071EC0870B00C1B625 /* BarGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarGraph.h; sourceTree = "<group>"; };
+		4963D4081EC0870B00C1B625 /* BarGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarGraph.m; sourceTree = "<group>"; };
+		4968D80A1ECB1E780003743A /* LineGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineGraph.h; sourceTree = "<group>"; };
+		4968D80B1ECB1E780003743A /* LineGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineGraph.m; sourceTree = "<group>"; };
+		49C3E6D11ED2C1EF008E3299 /* DonutChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonutChart.h; sourceTree = "<group>"; };
+		49C3E6D21ED2C1EF008E3299 /* DonutChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonutChart.m; sourceTree = "<group>"; };
+		49C3E6D41ED2C205008E3299 /* DonutChartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonutChartController.h; sourceTree = "<group>"; };
+		49C3E6D51ED2C205008E3299 /* DonutChartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonutChartController.m; sourceTree = "<group>"; };
+		49C3E6DD1ED310D2008E3299 /* FullMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullMeter.h; sourceTree = "<group>"; };
+		49C3E6DE1ED310D2008E3299 /* FullMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMeter.m; sourceTree = "<group>"; };
+		49C3E6E01ED310DE008E3299 /* HalfMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfMeter.h; sourceTree = "<group>"; };
+		49C3E6E11ED310DE008E3299 /* HalfMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfMeter.m; sourceTree = "<group>"; };
+		49C3E6E31ED310EB008E3299 /* Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scale.h; sourceTree = "<group>"; };
+		49C3E6E41ED310EB008E3299 /* Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scale.m; sourceTree = "<group>"; };
+		49C3E6E61ED31108008E3299 /* FullMeterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullMeterController.h; sourceTree = "<group>"; };
+		49C3E6E71ED31108008E3299 /* FullMeterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullMeterController.m; sourceTree = "<group>"; };
+		49C3E6EF1ED313B2008E3299 /* HalfMeterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HalfMeterController.h; sourceTree = "<group>"; };
+		49C3E6F01ED313B2008E3299 /* HalfMeterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HalfMeterController.m; sourceTree = "<group>"; };
+		49C3E6F21ED313D6008E3299 /* VHScaleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHScaleController.h; sourceTree = "<group>"; };
+		49C3E6F31ED313D6008E3299 /* VHScaleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHScaleController.m; sourceTree = "<group>"; };
+		49D295A01ECDA6A8002F5694 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		49D295A11ECDA6A8002F5694 /* CustomCellForPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellForPieChart.h; sourceTree = "<group>"; };
+		49D295A21ECDA6A8002F5694 /* CustomCellForPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellForPieChart.m; sourceTree = "<group>"; };
+		49D9712E1ECEFA220079A809 /* Pie3DChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pie3DChart.h; sourceTree = "<group>"; };
+		49D9712F1ECEFA220079A809 /* Pie3DChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pie3DChart.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4963D3E81EC084FA00C1B625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4937F4771EC2E56D008E3053 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4937F47D1EC2E5B3008E3053 /* Common.h */,
+				4937F47E1EC2E5D9008E3053 /* definitions.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4937F4781EC2E56D008E3053 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6D71ED310A9008E3299 /* FullMeterController */,
+				49C3E6D81ED310A9008E3299 /* HalfMeterController */,
+				49C3E6D91ED310A9008E3299 /* Vertical & Horizontal Scale */,
+				49C3E6CF1ED2C1BE008E3299 /* DonutChartController */,
+				493EF7641ECC3220007B2ED1 /* 3D PieChartController */,
+				493EF7651ECC3220007B2ED1 /* BarChartController */,
+				493EF7661ECC3220007B2ED1 /* LineChartController */,
+				493EF7671ECC3220007B2ED1 /* PieChartController */,
+				4937F4791EC2E56D008E3053 /* Home Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4937F4791EC2E56D008E3053 /* Home Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4937F47A1EC2E580008E3053 /* HomeViewController.h */,
+				4937F47B1EC2E580008E3053 /* HomeViewController.m */,
+			);
+			path = "Home Controller";
+			sourceTree = "<group>";
+		};
+		493EF7641ECC3220007B2ED1 /* 3D PieChartController */ = {
+			isa = PBXGroup;
+			children = (
+				493EF7741ECC48CB007B2ED1 /* PieChart3DController.h */,
+				493EF7751ECC48CB007B2ED1 /* PieChart3DController.m */,
+			);
+			path = "3D PieChartController";
+			sourceTree = "<group>";
+		};
+		493EF7651ECC3220007B2ED1 /* BarChartController */ = {
+			isa = PBXGroup;
+			children = (
+				493EF7681ECC322E007B2ED1 /* BarChartController.h */,
+				493EF7691ECC322E007B2ED1 /* BarChartController.m */,
+			);
+			path = BarChartController;
+			sourceTree = "<group>";
+		};
+		493EF7661ECC3220007B2ED1 /* LineChartController */ = {
+			isa = PBXGroup;
+			children = (
+				493EF76B1ECC328D007B2ED1 /* LineChartController.h */,
+				493EF76C1ECC328D007B2ED1 /* LineChartController.m */,
+			);
+			path = LineChartController;
+			sourceTree = "<group>";
+		};
+		493EF7671ECC3220007B2ED1 /* PieChartController */ = {
+			isa = PBXGroup;
+			children = (
+				493EF76E1ECC485F007B2ED1 /* PieChartController.h */,
+				493EF76F1ECC485F007B2ED1 /* PieChartController.m */,
+			);
+			path = PieChartController;
+			sourceTree = "<group>";
+		};
+		493EF7771ECC49D2007B2ED1 /* Graph Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				493EF7781ECC49E6007B2ED1 /* GraphCommon.h */,
+				493EF7791ECC49FB007B2ED1 /* GraphDefinition.h */,
+			);
+			path = "Graph Utilities";
+			sourceTree = "<group>";
+		};
+		4963D3E21EC084FA00C1B625 = {
+			isa = PBXGroup;
+			children = (
+				4963D3ED1EC084FA00C1B625 /* CustomBarGraph */,
+				4963D3EC1EC084FA00C1B625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4963D3EC1EC084FA00C1B625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4963D3EB1EC084FA00C1B625 /* CustomBarGraph.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4963D3ED1EC084FA00C1B625 /* CustomBarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				4937F4771EC2E56D008E3053 /* Utilities */,
+				4937F4781EC2E56D008E3053 /* View Controllers */,
+				4963D4051EC086EE00C1B625 /* Graphs */,
+				4963D3F11EC084FA00C1B625 /* AppDelegate.h */,
+				4963D3F21EC084FA00C1B625 /* AppDelegate.m */,
+				4963D3F71EC084FA00C1B625 /* Main.storyboard */,
+				4963D3FA1EC084FA00C1B625 /* Assets.xcassets */,
+				4963D3FC1EC084FA00C1B625 /* LaunchScreen.storyboard */,
+				4963D3FF1EC084FA00C1B625 /* Info.plist */,
+				4963D3EE1EC084FA00C1B625 /* Supporting Files */,
+			);
+			path = CustomBarGraph;
+			sourceTree = "<group>";
+		};
+		4963D3EE1EC084FA00C1B625 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4963D3EF1EC084FA00C1B625 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4963D4051EC086EE00C1B625 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6DA1ED310BB008E3299 /* FullMeter */,
+				49C3E6DB1ED310BB008E3299 /* HalfMeter */,
+				49C3E6DC1ED310BB008E3299 /* VeritcalHorizontalScale */,
+				49C3E6D01ED2C1CD008E3299 /* DonutChart */,
+				49D9712D1ECEFA220079A809 /* Pie3DGraph */,
+				493EF7771ECC49D2007B2ED1 /* Graph Utilities */,
+				4968D8081ECB1E640003743A /* LineGraph */,
+				4968D8091ECB1E640003743A /* PieGraph */,
+				4963D4061EC086EE00C1B625 /* BarGraph */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		4963D4061EC086EE00C1B625 /* BarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				4963D4071EC0870B00C1B625 /* BarGraph.h */,
+				4963D4081EC0870B00C1B625 /* BarGraph.m */,
+				493F14741EC5C51B001A7CA8 /* MyShapeLayer.h */,
+				493F14751EC5C51B001A7CA8 /* MyShapeLayer.m */,
+			);
+			path = BarGraph;
+			sourceTree = "<group>";
+		};
+		4968D8081ECB1E640003743A /* LineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				4968D80A1ECB1E780003743A /* LineGraph.h */,
+				4968D80B1ECB1E780003743A /* LineGraph.m */,
+			);
+			path = LineGraph;
+			sourceTree = "<group>";
+		};
+		4968D8091ECB1E640003743A /* PieGraph */ = {
+			isa = PBXGroup;
+			children = (
+				49D295A01ECDA6A8002F5694 /* CustomCell.xib */,
+				49D295A11ECDA6A8002F5694 /* CustomCellForPieChart.h */,
+				49D295A21ECDA6A8002F5694 /* CustomCellForPieChart.m */,
+				493EF7611ECC25BD007B2ED1 /* PieChart.h */,
+				493EF7621ECC25BD007B2ED1 /* PieChart.m */,
+			);
+			path = PieGraph;
+			sourceTree = "<group>";
+		};
+		49C3E6CF1ED2C1BE008E3299 /* DonutChartController */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6D41ED2C205008E3299 /* DonutChartController.h */,
+				49C3E6D51ED2C205008E3299 /* DonutChartController.m */,
+			);
+			path = DonutChartController;
+			sourceTree = "<group>";
+		};
+		49C3E6D01ED2C1CD008E3299 /* DonutChart */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6D11ED2C1EF008E3299 /* DonutChart.h */,
+				49C3E6D21ED2C1EF008E3299 /* DonutChart.m */,
+			);
+			path = DonutChart;
+			sourceTree = "<group>";
+		};
+		49C3E6D71ED310A9008E3299 /* FullMeterController */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6E61ED31108008E3299 /* FullMeterController.h */,
+				49C3E6E71ED31108008E3299 /* FullMeterController.m */,
+			);
+			path = FullMeterController;
+			sourceTree = "<group>";
+		};
+		49C3E6D81ED310A9008E3299 /* HalfMeterController */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6EF1ED313B2008E3299 /* HalfMeterController.h */,
+				49C3E6F01ED313B2008E3299 /* HalfMeterController.m */,
+			);
+			path = HalfMeterController;
+			sourceTree = "<group>";
+		};
+		49C3E6D91ED310A9008E3299 /* Vertical & Horizontal Scale */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6F21ED313D6008E3299 /* VHScaleController.h */,
+				49C3E6F31ED313D6008E3299 /* VHScaleController.m */,
+			);
+			path = "Vertical & Horizontal Scale";
+			sourceTree = "<group>";
+		};
+		49C3E6DA1ED310BB008E3299 /* FullMeter */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6DD1ED310D2008E3299 /* FullMeter.h */,
+				49C3E6DE1ED310D2008E3299 /* FullMeter.m */,
+			);
+			path = FullMeter;
+			sourceTree = "<group>";
+		};
+		49C3E6DB1ED310BB008E3299 /* HalfMeter */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6E01ED310DE008E3299 /* HalfMeter.h */,
+				49C3E6E11ED310DE008E3299 /* HalfMeter.m */,
+			);
+			path = HalfMeter;
+			sourceTree = "<group>";
+		};
+		49C3E6DC1ED310BB008E3299 /* VeritcalHorizontalScale */ = {
+			isa = PBXGroup;
+			children = (
+				49C3E6E31ED310EB008E3299 /* Scale.h */,
+				49C3E6E41ED310EB008E3299 /* Scale.m */,
+			);
+			path = VeritcalHorizontalScale;
+			sourceTree = "<group>";
+		};
+		49D9712D1ECEFA220079A809 /* Pie3DGraph */ = {
+			isa = PBXGroup;
+			children = (
+				49D9712E1ECEFA220079A809 /* Pie3DChart.h */,
+				49D9712F1ECEFA220079A809 /* Pie3DChart.m */,
+			);
+			path = Pie3DGraph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4963D3EA1EC084FA00C1B625 /* CustomBarGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4963D4021EC084FA00C1B625 /* Build configuration list for PBXNativeTarget "CustomBarGraph" */;
+			buildPhases = (
+				4963D3E71EC084FA00C1B625 /* Sources */,
+				4963D3E81EC084FA00C1B625 /* Frameworks */,
+				4963D3E91EC084FA00C1B625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomBarGraph;
+			productName = CustomBarGraph;
+			productReference = 4963D3EB1EC084FA00C1B625 /* CustomBarGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4963D3E31EC084FA00C1B625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Neeraj Solanki";
+				TargetAttributes = {
+					4963D3EA1EC084FA00C1B625 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 94FEM7X3QN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4963D3E61EC084FA00C1B625 /* Build configuration list for PBXProject "CustomBarGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4963D3E21EC084FA00C1B625;
+			productRefGroup = 4963D3EC1EC084FA00C1B625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4963D3EA1EC084FA00C1B625 /* CustomBarGraph */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4963D3E91EC084FA00C1B625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4963D3FE1EC084FA00C1B625 /* LaunchScreen.storyboard in Resources */,
+				4963D3FB1EC084FA00C1B625 /* Assets.xcassets in Resources */,
+				49D295A31ECDA6A8002F5694 /* CustomCell.xib in Resources */,
+				4963D3F91EC084FA00C1B625 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4963D3E71EC084FA00C1B625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4963D4091EC0870B00C1B625 /* BarGraph.m in Sources */,
+				493F14761EC5C51B001A7CA8 /* MyShapeLayer.m in Sources */,
+				493EF76D1ECC328D007B2ED1 /* LineChartController.m in Sources */,
+				49C3E6F41ED313D6008E3299 /* VHScaleController.m in Sources */,
+				493EF7761ECC48CB007B2ED1 /* PieChart3DController.m in Sources */,
+				49D971301ECEFA220079A809 /* Pie3DChart.m in Sources */,
+				49C3E6E21ED310DE008E3299 /* HalfMeter.m in Sources */,
+				49C3E6E51ED310EB008E3299 /* Scale.m in Sources */,
+				49C3E6D31ED2C1EF008E3299 /* DonutChart.m in Sources */,
+				49C3E6DF1ED310D2008E3299 /* FullMeter.m in Sources */,
+				49D295A41ECDA6A8002F5694 /* CustomCellForPieChart.m in Sources */,
+				4963D3F31EC084FA00C1B625 /* AppDelegate.m in Sources */,
+				49C3E6E81ED31108008E3299 /* FullMeterController.m in Sources */,
+				49C3E6D61ED2C205008E3299 /* DonutChartController.m in Sources */,
+				4968D80C1ECB1E780003743A /* LineGraph.m in Sources */,
+				49C3E6F11ED313B2008E3299 /* HalfMeterController.m in Sources */,
+				493EF76A1ECC322E007B2ED1 /* BarChartController.m in Sources */,
+				493EF7631ECC25BD007B2ED1 /* PieChart.m in Sources */,
+				4937F47C1EC2E580008E3053 /* HomeViewController.m in Sources */,
+				4963D3F01EC084FA00C1B625 /* main.m in Sources */,
+				493EF7701ECC485F007B2ED1 /* PieChartController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4963D3F71EC084FA00C1B625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4963D3F81EC084FA00C1B625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4963D3FC1EC084FA00C1B625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4963D3FD1EC084FA00C1B625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4963D4001EC084FA00C1B625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4963D4011EC084FA00C1B625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4963D4031EC084FA00C1B625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94FEM7X3QN;
+				INFOPLIST_FILE = CustomBarGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RapidSoft.CustomBarGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4963D4041EC084FA00C1B625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 94FEM7X3QN;
+				INFOPLIST_FILE = CustomBarGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RapidSoft.CustomBarGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4963D3E61EC084FA00C1B625 /* Build configuration list for PBXProject "CustomBarGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4963D4001EC084FA00C1B625 /* Debug */,
+				4963D4011EC084FA00C1B625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4963D4021EC084FA00C1B625 /* Build configuration list for PBXNativeTarget "CustomBarGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4963D4031EC084FA00C1B625 /* Debug */,
+				4963D4041EC084FA00C1B625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4963D3E31EC084FA00C1B625 /* Project object */;
+}
